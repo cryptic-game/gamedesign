@@ -3,16 +3,16 @@
 ## What is game design?
 At a theoretical level Game design is responsible for which characteristics and factors must be out for the planning of an exciting game. Therefore, we decide which contents the game Cryptic shall contain which includes the determining of e.g. a desktop, browser as well as a terminal or an experience system and its own logic. In addition, we determine the story and think of a game strategy. The game balancing is in charge to balance the different parts of the game.
 
-Our template is the game concept which is written down in the [specification sheet] (https://docs.google.com/document/d/17ac_FxqzxQT7DbrJf-xyr8B_ySuvDZhagqP5w10oeyw/edit). The game designer practically takes care of the whole game.
+Our template is the game concept which is written down in the [specification sheet](https://docs.google.com/document/d/17ac_FxqzxQT7DbrJf-xyr8B_ySuvDZhagqP5w10oeyw/edit). The game designer practically takes care of the whole game.
 
-[Interesting link about gamedesign:] (https://entwickler.de/online/game-design-die-theorie-hinter-einem-spannenden-spiel-158631.html)
+[Interesting link about gamedesign:](https://entwickler.de/online/game-design-die-theorie-hinter-einem-spannenden-spiel-158631.html)
 
 ## How does the game design work in the community project?
 The game concept points the general direction of how the game should be. Everyone working on the game has to stay with it. However, modifications of the game concept are possible.
 
 The development of the game is divided in different stages (Alpha 1, Alpha 2, …, Beta 1, Beta 2 and so on). Every stage is a large package containing content which have to be defined. Every package will be subdivided in smaller packages.
 
-You can submit ideas or proposals for modifications via (an open formula,) the [Cryptic-Discord sever] (https://discord.gg/VgyFbaK) or GitHub. Of course, there is the possibility to submit complete scripts, but they will be reviewed and eventually only parts of it will be used. Existing ideas or proposals for modifications can be checked out and commented in our public ideas document.
+You can submit ideas or proposals for modifications via (an open formula,) the [Cryptic-Discord sever](https://discord.gg/VgyFbaK) or GitHub. Of course, there is the possibility to submit complete scripts, but they will be reviewed and eventually only parts of it will be used. Existing ideas or proposals for modifications can be checked out and commented in our public ideas document.
 
 ### Procedure:
 1.  Planning/Determining the contents of the alpha phase (first document)
@@ -34,4 +34,4 @@ GDD = gamedesign document
 - Diagrams/Graphics as illustration
 
 ## Definition gamedesign in german
-[The german document] (https://docs.google.com/document/d/1KvxZQLF5v3CdyeGlwGvgeCqbzI3up2nMIYR6degu6i8/edit#heading=h.7uzootjlhnze)
+[The german document](https://docs.google.com/document/d/1KvxZQLF5v3CdyeGlwGvgeCqbzI3up2nMIYR6degu6i8/edit#heading=h.7uzootjlhnze)
