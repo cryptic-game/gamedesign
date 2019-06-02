@@ -1,6 +1,8 @@
 ### Pre-Alpha 2.0
 
 * NEU: Computerhardware / Ein erster minimal Start-PC (Frontend/Backend)
+* NEU: Netzwerk erweitern
+* NEU: Router und Switch (Frontend/Backend)
 * Anpassung: neue Hacker-Attack und/oder vorhandene ausbauen (Backend/Frontend)
 * Anpassung: Terminal weiter ausbauen
 * Anpassung: Taskleiste Funktionen weiter ausbauen
