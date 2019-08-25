@@ -1,17 +1,26 @@
-### Pre-Alpha 2.0
+# Pre-Alpha 2.0
 
-* NEU: Computerhardware / Ein erster minimal Start-PC (Frontend/Backend)
-* NEU: Netzwerk erweitern
-* NEU: Router und Switch (Frontend/Backend)
-* Anpassung: neue Hacker-Attack und/oder vorhandene ausbauen (Backend/Frontend)
-* Anpassung: Terminal weiter ausbauen
-* Anpassung: Taskleiste Funktionen weiter ausbauen
-* NEU: Fenster: CPU-Kryptominer generiert MC (Frontend/Backend)
-* NEU: Fenster: Minimaler Taskmanager, zeigt beanspruchte Systemleistung an
-* NEU: Fenster: Wallet zeigt dein Kontostand an (Frontend)
-* NEU: Fenster: Firewall schützt vor Angriffen (Frontend/Backend)
-* NEU: Menüfeld (Bereich zum PC Starten, Spieleinstellungen, etc) (Frontend)
-* NEU: Computerbildschirm Ausschalten + Starten (Frontend)
-* NEU: Fenster: Dateimanager mit einer Ordnerebene (Partition) (Frontend)
+**Inhalte**
+
+| Status      | Spielelemente                                          | Backend  | Frontend | Design |
+|:---:        |:---                                                    |---       |---       |---     |
+| NEU         | Computerhardware / Ein erster minimal Start-PC         | Backend  | Frontend | Design |
+| NEU         | Computer konfigurieren                                 | Backend  | Frontend | Design |
+| NEU         | Netzwerk erweitern                                     | Backend  |          |        |
+| NEU         | Router und Switch implementieren                       | Backend  |          |        |
+| NEU         | CPU-Kryptominer-App generiert MC                       | Backend  | Frontend | Design |
+| NEU         | Taskmanager-App, zeigt beanspruchte Systemleistung an  |          | Frontend | Design |
+| NEU         | Wallet-App zeigt den Kontostand an                     | Backend  | Frontend | Design |
+| NEU         | Hardware-Shop-App (Globaler Händler)                   | Backend  | Frontend | Design |
+| NEU         | Dateimanager-App mit einer Ordnerebene                 |          | Frontend | Design |
+| NEU         | Gerätespezifikation-App, zeigt Computerconfig an       |          | Frontend | Design |
+| NEU         | Hardwareaustausch unter Spielern                       | Backend  | Frontend | Design |
+| NEU         | Control-Center (Bereich zum PC starten, Computer konfigurieren, Spieleinstellungen, etc.) |             | Frontend | Design |
+| NEU         | Computer Starten + Ausschalten                         |          | Frontend | Design |
+| NEU         | Systemauslastung                                       | Backend  |          |        |
+| NEU         | Changelog zugänglich über Control-Center               |          | Frontend | Design |
+| Erweiterung | Terminal-Befehle erweitern                             | Backend  | Frontend |        |
+| Erweiterung | Taskleiste Funktionen weiter ausbauen                  |          | Frontend | Design |
 
 Änderungen nicht ausgeschlossen.
+Stand: 25.08.2019
