@@ -1,6 +1,6 @@
 ---
 name: Feature request
-about: Suggest an idea for this project
+about: Suggest an idea for a new gamebit
 ---
 # Description
 A clear and concise description of what you want to happen.
@@ -12,11 +12,11 @@ A clear and concise description of what the problem is. If there's no problem, y
 # Additional context
 Add any other context about the feature request here.
 
-# Parts
+# Steps
 
-- [] Check the new gamebit
-- [] Create a concept and write it into the game design document or similar
-- [] Check the new concept in gamedesign/backend/frontend
-- [] Rework the concept
-- [] Check again
-- [] Finish the gamebit 
+- [ ] Check the new gamebit
+- [ ] Create a concept and write it into the game design document or similar
+- [ ] Check the new concept in gamedesign/backend/frontend
+- [ ] Rework the concept
+- [ ] Check again
+- [ ] Finish the gamebit 

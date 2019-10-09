@@ -15,11 +15,11 @@ A clear and concise description of what the problem is. If there's no problem, y
 # Additional context
 Add any other context about the enhancement here.
 
-# Parts
+# Steps
 
-- [] Check the enhancement
-- [] Create a concept and write it into the game design document or similar
-- [] Check the new concept in gamedesign/backend/frontend
-- [] Rework the concept
-- [] Check again
-- [] Finish the gamebit 
+- [ ] Check the enhancement
+- [ ] Create a concept and write it into the game design document or similar
+- [ ] Check the new concept in gamedesign/backend/frontend
+- [ ] Rework the concept
+- [ ] Check again
+- [ ] Finish the gamebit 
