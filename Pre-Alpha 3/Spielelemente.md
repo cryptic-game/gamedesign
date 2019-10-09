@@ -2,19 +2,18 @@
 
 **Inhalte**
 
-Planung der Pre-Alpha 3
-
 | Status      | Spielelemente                                                          | Backend  | Frontend | Design |
 |:---:        |:---                                                                    |---       |---       |---     |
 | NEU         | Basis für Musik und Sounds implementieren                              |          | Frontend | Design |
-| NEU         | Firewall-App schützt vor Angriffen                                     | Backend  | Frontend | Design |
+| NEU         | Firewall-App implementieren, schützt vor Angriffen                     | Backend  | Frontend | Design |
 | NEU         | Basis für Betriebssystem implementieren                                | Backend  | Frontend | Design |
-| NEU         | Computer-Konfiguration per UI-Slotsystem implementieren                |          | Frontend | Design |
-| NEU         | Computer-Stromverbrauch + Kosten-Rechnung implementieren               | Backend  | Frontend | Design |
+| NEU         | Basis für Chat-App/IRC implementieren                                  | Backend  | Frontend | Design |
+| NEU         | Netzwerk-UI implementieren                                             |          | Frontend | Design |
+| Erweiterung | Computer-Konfiguration per UI-Slotsystem implementieren                |          | Frontend | Design |
 | Erweiterung | neue Hacker-Attacke(n) implementieren und/oder vorhandene ausbauen     | Backend  | Frontend | Design |
-| Erweiterung | Terminal weiter ausbauen/optimieren                                    |          | Frontend | Design |
+| Erweiterung | Terminal weiter ausbauen/optimieren                                    | Backend  | Frontend | Design |
 | Erweiterung | Hardware-Gameconfig erweitern (device, service, inventory)             | Backend  |          |        |
-| Erweiterung | Netzwerk, Router, Switch verbessern + UI implementieren                | Backend  | Frontend | Design |
+| Erweiterung | Netzwerk, Router, Switch verbessern                                    | Backend  |          |        |
 
-Änderungen nicht ausgeschlossen.
-Stand: 16.09.2019
+Änderungen nicht ausgeschlossen.  
+Stand: 09.10.2019
