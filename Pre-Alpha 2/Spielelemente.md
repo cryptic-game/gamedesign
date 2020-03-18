@@ -4,7 +4,7 @@
 
 |   Status    | Spielelemente                                                        | Backend | Frontend | Design | Gamedesign |
 | :---------: | :------------------------------------------------------------------- | ------- | -------- | ------ | ---------- |
-|     NEU     | Computerhardware + minimal/maximal PC                                | Backend | Frontend | Design | Gamedesign |
+|     NEU     | Basis Computerhardware + minimal/maximal PC                          | Backend | Frontend | Design | Gamedesign |
 |     NEU     | Computer zusammenbauen                                               | Backend | Frontend | Design | Gamedesign |
 |     NEU     | Basis für Privates + Öffentliches Netzwerk                           | Backend |          |        | Gamedesign |
 |     NEU     | CPU-Kryptominer-App generiert Ingame-Geld                            | Backend | Frontend | Design | Gamedesign |
@@ -20,9 +20,11 @@
 |     NEU     | Basis für Hardwareaustausch unter Spielern                           | Backend | Frontend | Design | Gamedesign |
 |     NEU     | Startmenü Link zum Bugmelden (Github + Bugformular)                  |         | Frontend |        | Gamedesign |
 |     NEU     | Funktion: Passwort ändern                                            | Backend | not available   |        | Gamedesign |
+|     NEU     | Alle Services stoppen + löschen / Ausnahme: SSH-Service              | Backend | not available   |        | Gamedesign |
 |  Änderung   | Passwort: keine Sonderzeichen nötig, dafür Groß- und Kleinbuchstaben | Backend |          |        | Gamedesign |
+|  Änderung   | Login/Registierung überarbeitet, Passwort erstellen mit Ampel-System |         | Frontend |        | Gamedesign |
 | Erweiterung | Terminal-Befehle erweitern                                           |         | Frontend |        | Gamedesign |
-| Erweiterung | Filesystem: Ordner anlegen, Dateien kopieren, etc.                   | Backend | Frontend |        | Gamedesign |
+| Erweiterung | Filesystem: Ordner anlegen/umbennen, Dateien kopieren, etc.          | Backend | Frontend |        | Gamedesign |
 
 Änderungen nicht ausgeschlossen.  
-Stand: 03.03.2020
+Stand: 18.03.2020
