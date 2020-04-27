@@ -21,10 +21,15 @@
 |     NEU     | Startmenü Link zum Bugmelden (Github + Bugformular)                  |         | Frontend |        | Gamedesign |
 |     NEU     | Funktion: Passwort ändern                                            | Backend | not available   |        | Gamedesign |
 |     NEU     | Alle Services stoppen + löschen / Ausnahme: SSH-Service              | Backend | not available   |        | Gamedesign |
+|     NEU     | Basis für Chat-App                                                   | Backend | not available   |        | Gamedesign |
 |  Änderung   | Passwort: keine Sonderzeichen nötig, dafür Groß- und Kleinbuchstaben | Backend |          |        | Gamedesign |
 |  Änderung   | Login/Registierung überarbeitet, Passwort erstellen mit Ampel-System |         | Frontend |        | Gamedesign |
-| Erweiterung | Terminal-Befehle erweitern                                           |         | Frontend |        | Gamedesign |
+| Erweiterung | Terminal-Befehle erweitert                                           |         | Frontend |        | Gamedesign |
 | Erweiterung | Filesystem: Ordner anlegen/umbennen, Dateien kopieren, etc.          | Backend | Frontend |        | Gamedesign |
+| Bugfix      | Fehler in der Skalierung von App-Fenster behoben                     | Backend | Frontend |        | Gamedesign |
+| Bugfix      | Verschiedene Fehler im Terminal behoben                              | Backend | Frontend |        | Gamedesign |
+| Bugfix      | Kryptominer-App mehrmals öffnen behoben                              |         | Frontend |        | Gamedesign |
+
 
 Änderungen nicht ausgeschlossen.  
-Stand: 18.03.2020
+Stand: 18.04.2020
