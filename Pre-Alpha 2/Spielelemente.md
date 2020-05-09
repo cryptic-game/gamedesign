@@ -1,5 +1,7 @@
 # Pre-Alpha 2.0
 
+``Info: Aktuell wird an der Pre-Alpha 2.0 entwickelt.``
+
 **Inhalte**
 
 |   Status    | Spielelemente                                                        | Backend | Frontend | Design | Gamedesign |
@@ -22,8 +24,9 @@
 |     NEU     | Funktion: Passwort ändern                                            | Backend | not available   |        | Gamedesign |
 |     NEU     | Alle Services stoppen + löschen / Ausnahme: SSH-Service              | Backend | not available   |        | Gamedesign |
 |     NEU     | Basis für Chat-App                                                   | Backend | not available   |        | Gamedesign |
+|     NEU     | Progressiv Web App Support (PWA)                                     |         | Frontend |        |            |
 |  Änderung   | Passwort: keine Sonderzeichen nötig, dafür Groß- und Kleinbuchstaben | Backend |          |        | Gamedesign |
-|  Änderung   | Login/Registierung überarbeitet, Passwort erstellen mit Ampel-System |         | Frontend |        | Gamedesign |
+|  Änderung   | Login/Registierung überarbeitet, Passwort prüfen durch Ampel-System  |         | Frontend |        | Gamedesign |
 | Erweiterung | Terminal-Befehle erweitert                                           |         | Frontend |        | Gamedesign |
 | Erweiterung | Filesystem: Ordner anlegen/umbennen, Dateien kopieren, etc.          | Backend | Frontend |        | Gamedesign |
 | Bugfix      | Fehler in der Skalierung von App-Fenster behoben                     | Backend | Frontend |        | Gamedesign |
@@ -32,4 +35,4 @@
 
 
 Änderungen nicht ausgeschlossen.  
-Stand: 18.04.2020
+Stand: 08.05.2020
