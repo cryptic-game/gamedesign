@@ -1,12 +1,12 @@
 ---
 name: Feature Enhancement
-about: Suggest an enhancement for an existing gamebit.
+about: Suggest an enhancement for an existing game element.
 labels: enhancement
 
 ---
 
-**Which gamebit do you want to expand?**
-> Please provide the name of the gamebit.
+**Which game element do you want to expand?**
+> Please provide the name of the game element.
 
 **Describe the solution you'd like**
 > Please provide a clear and concise description of what you want to happen.
