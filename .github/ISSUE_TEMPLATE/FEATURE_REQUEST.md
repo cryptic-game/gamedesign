@@ -1,6 +1,6 @@
 ---
 name: Feature Request
-about: Suggest an idea for a new gamebit.
+about: Suggest an idea for a new game element.
 labels: new feature
 
 ---
