@@ -32,7 +32,9 @@
 | Bugfix      | Fehler in der Skalierung von App-Fenster behoben                     | Backend | Frontend |        | Gamedesign |
 | Bugfix      | Verschiedene Fehler im Terminal behoben                              | Backend | Frontend |        | Gamedesign |
 | Bugfix      | Kryptominer-App mehrmals öffnen behoben                              |         | Frontend |        | Gamedesign |
+| Entfernt    | Browser-Fenster + Icon entfernt                                      |         | Frontend |        | Gamedesign |
+| Entfernt    | E-Mail-Textfeld aus Registierung entfernt                            |         | Frontend |        | Gamedesign |
 
 
 Änderungen nicht ausgeschlossen.  
-Stand: 08.05.2020
+Stand: 23.05.2020
