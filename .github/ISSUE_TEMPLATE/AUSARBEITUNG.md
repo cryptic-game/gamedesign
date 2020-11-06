@@ -1,6 +1,6 @@
 ---
-name: Ausarbeitung Ist Stnad
-about: 
+name: Ausarbeitung Ist Stand
+about: Ausarbeitung Ist Stand
 labels: Ausarbeitung
 
 ---
