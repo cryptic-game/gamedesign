@@ -14,8 +14,6 @@ Der Benutzername muss folgende Kriterien erfüllen:
 *   Länge zwischen 4 und 32 Zeichen
 *   Darf nur Buchstaben (a-z, A-Z) und Zahlen (0-9) enthalten
 *   Derselbe Benutzername darf nicht mehrfach vergeben werden
-*   In dem Benutzernamen wird das Wort "Cryptic" (case-insensitive) durch 7 Sterne ersetzt
-    *   Der Cryptic-Benutzer dient als Team- und Testaccount
 *   (zukünftig: Kein Name von der Blacklist)
 
 Das Passwort muss folgende Mindestkriterien (vgl. gelber Balken) erfüllen:
