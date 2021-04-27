@@ -1,3 +1,8 @@
+## **1.1 Account/User**
+
+Abgeschlossen: Security, Defelo, Tristan \
+Datum: 31.01.2021 
+
 ### **1.1.1 Registrieren**
 
 Funktion um neue Spieler zu registrieren.
@@ -36,6 +41,8 @@ Folgende Angaben müssen zwingend erfolgen:
 
 *   Benutzername
 *   Passwort
+
+Der Login hat ein Timeout von 2 Wochen (im Backend einstellbar).
 
 <br>
 
