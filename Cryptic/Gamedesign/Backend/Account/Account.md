@@ -52,9 +52,9 @@ Der Login hat ein Timeout von 2 Wochen (im Backend einstellbar).
 Er muss folgende Angaben tätigen:
     *   bisheriges Passwort
     *   neues Passwort
-    *   Anforderungen an das neue Passwort: s. [Registrieren](Cryptic/Gamedesign/Backend/Account/Account.md#111-registrieren)
+    *   Anforderungen an das neue Passwort: s. [Registrieren](Account.md#111-registrieren)
 *   Der Benutzer kann seinen Nutzernamen monatlich 1x ändern
-    *   Anforderungen  s. [Registrieren](Cryptic/Gamedesign/Backend/Account/Account.md#111-registrieren)
+    *   Anforderungen  s. [Registrieren](Account.md#111-registrieren)
 
 <br>
 
