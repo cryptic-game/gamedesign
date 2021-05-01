@@ -3,15 +3,17 @@
 erstellt von [Marius, Tristan, Maulwurf]
 
 >Abgeschlossen: Marius, Marcel, Yannes, Maulwurf \
-Datum: 03.04.2021 
+Datum: 03.04.2021
 
-**(Hinweis: Das Dateisystem ist in den Prozess Betriebssystem eingegliedert!)**
+<br>
+
+**(Hinweis: Das Dateisystem ist in den <span style="text-decoration:underline;">Prozess Betriebssystem</span> eingegliedert!)**
 
 * Jeder Spieler kann auf einem Computer Ordner und Dateien anlegen.\
 Anm. Devs: Stufe je nach Rechten auswählbar
 * Die Dateien und Ordner sind Festplattenabhängig, d.h. sie sind auf der jeweiligen Festplatte gespeichert unabhängig in welchem Computer sie verbaut ist.\
 Anm. Devs: (PC mit mehreren Festplatten)
-* Die Anzahl der Ordner und Dateien ist abhängig von der verbauten Festplatte des Computers (s. Speichernutzung)
+* Die Anzahl der Ordner und Dateien ist abhängig von der verbauten Festplatte des Computers (s. [Speichernutzung](Cryptic/Gamedesign/Backend/Filesystem/Filesystem.md#143-speichernutzung))
 * Die Dateien können nur abgerufen werden, wenn man Zugriff auf das Dateisystem der Festplatte hat.
 
 <br>
@@ -20,7 +22,7 @@ Anm. Devs: (PC mit mehreren Festplatten)
 
 * Ordner können weitere Ordner und Dateien enthalten.
 * Ordner sind vom Spieler zu benennen: - auch beim Umbenennen beachten
-    * kein Name von der Blacklist
+    * kein Name von der [Blacklist](Cryptic/Gamedesign/Backend/Filesystem/Filesystem.md#144-blacklist)
     * 1 bis 32 Zeichen im Namen
     * Namen dürfen nur Buchstaben, Ziffern und `.-_` enthalten. (ASCII 45-46, 65-90, 95, 97-122)
 * Ordner können verschoben werden (mit Inhalt).
@@ -39,11 +41,11 @@ Anm. Devs: (PC mit mehreren Festplatten)
 * Inhalte werden auf Blacklist-Begriffe geprüft.
 * Es sind alle gängigen Buchstaben, Zahlen und Sonderzeichen zulässig (Inhalt der Datei). UTF-8
 * Dateiname ist vom Spieler anzugeben:
-    * kein Name von der <span style="text-decoration:underline;">Blacklist</span> 
+    * kein Name von der [Blacklist](Cryptic/Gamedesign/Backend/Filesystem/Filesystem.md#144-blacklist)
     * 1 bis 32 Zeichen im Namen
     * Namen dürfen nur Buchstaben, Ziffern und `.-_` enthalten. (ASCII 45-46, 65-90, 95, 97-122)
 * Dateien sind vom Spieler zu benennen:
-    * Siehe <span style="text-decoration:underline;">1.4.1 Ordnerstruktur</span>
+    * Siehe [1.4.1 Ordnerstruktur](Cryptic/Gamedesign/Backend/Filesystem/Filesystem.md#141-ordnerstruktur)
 * Dateien können sichtbar oder unsichtbar sein, siehe <span style="text-decoration:underline;">1.6.1.1.5.2 Stufensystem</span>
 * Dateien können umbenannt werden.
 * Dateien können verschoben werden.
