@@ -1,0 +1,136 @@
+---
+mainboard:
+  mainboard_1:
+    id: int
+    name: string
+    case: string
+    cpuSocket: string
+    cpuSlots: int
+    coreTemperatureControl: bool
+    usbPorts: int
+    ram:
+      ramSlots: int
+      maxRamSize: int
+      ramTyp:
+        - string
+      frequency:
+        - int
+    graphicUnitOnBoard:
+      name: string
+      vRamSize: int
+      frequency: int
+      capabilityGPU: int
+    expansionSlots:
+      - interface: string
+        interfaceSlots: int
+    diskStorage:
+      - interface: string
+        diskSlots: int
+    networkPort:
+      networkUnitOnBoard: bool
+      name: string
+      plugSocket: string
+      ports: int
+      speed: int
+      capabilityNET: int
+    powerUsage: int
+    price: int
+cpu:
+  cpu_1:
+    id: int
+    name: string
+    frequencyMin: int
+    frequencyMax: int
+    socket: string
+    cores: int
+    turboSpeed: bool
+    overClock: bool
+    maxTemperature: int
+    graphicUnit:
+      name: string
+      vRamSize: int
+      frequency: int
+      capabilityGPU: int
+    capabilityCPU: int
+    powerUsage: int
+    price: int
+processorCooler:
+  cpu_cooler_1:
+    id: int
+    name: string
+    coolerSpeed: int
+    socket: string
+    powerUsage: int
+    price: int
+ram:
+  ram_1:
+    id: int
+    name: string
+    ramSize: int
+    ramTyp: string
+    frequency: int
+    capabilityRAM: int
+    powerUsage: int
+    price: int
+gpu:
+  gpu_1:
+    id: int
+    name: string
+    vRamSize: int
+    vRamTyp: string
+    frequency: int
+    interface: string
+    capabilityGPU: int
+    powerUsage: int
+    price: int
+disk:
+  disk_1:
+    id: int
+    name: string
+    diskTyp: string
+    capacity: int
+    writingSpeed: int
+    readingSpeed: int
+    interface: string
+    powerUsage: int
+    price: int
+networkcard:
+  network_card_1:
+    id: int
+    name: string
+    interface: string
+    network:
+      plugSocket: string
+      ports: int
+    speed: int
+    capabilityNET: int
+    powerUsage: int
+    price: int
+powerPack:
+  powerpack_1:
+    id: int
+    name: string
+    totalPower: int
+    price: int
+case:
+  case_1:
+    id: int
+    case: string
+    price: int
+router:
+  router_1:
+    id: int
+    name: string
+    network:
+      plugSocket: string
+      ports: int
+    speed: int
+    connects: int
+    powerUsage: int
+    price: int
+server_router:
+  router_1:
+    id: int
+    name: string
+    ports: int
+    adresse: string
