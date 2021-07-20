@@ -41,7 +41,7 @@ mainboard:
     networkPort:
       networkUnitOnBoard: true
       name: Network One
-      plugSocket: RJ46
+      connectorType: RJ46
       ports: 1
       speed: 100
       capabilityNET: 50
@@ -85,7 +85,7 @@ mainboard:
     networkPort:
       networkUnitOnBoard: false
       name: null
-      plugSocket: null
+      connectorType: null
       ports: null
       speed: null
       capabilityNET: null
@@ -228,9 +228,7 @@ networkcard:
     id: 700
     name: Network Element One
     interface: PCIe 1.0
-    network:
-      plugSocket: RJ46
-      ports: 2
+    connectorType: RJ46
     speed: 200
     capabilityNET: 800
     powerUsage: 25
@@ -259,15 +257,15 @@ case:
     id: 902
     case: big
     price: 100
-router:
+player_router:
   Router One:
     id: 700
     name: Router One
     network:
-      plugSocket: RJ46
+      connectorType: RJ46
       ports: 2
+      connects: 5
     speed: 200
-    connects: 5
     powerUsage: 7
     price: -1
 server_router:
@@ -275,19 +273,19 @@ server_router:
     id: 55000
     name: Morph-Addr-Refresher-Router
     ports: 250
-    adresse: 00.11.11.11
+    address: 00.11.11.11
   router_2:
     id: 56000
     name: Hardwareshop-Router
     ports: 300
-    adresse: 00.12.12.12
+    address: 00.12.12.12
   router_3:
     id: 57000
     name: Money-Pool-Router
     ports: 300
-    adresse: 00.13.13.13
+    address: 00.13.13.13
   router_4:
     id: 58000
     name: Dispatch-Service-Router
     ports: 150
-    adresse: 00.14.14.14
+    address: 00.14.14.14
