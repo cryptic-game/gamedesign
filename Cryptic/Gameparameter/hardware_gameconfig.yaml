@@ -1,20 +1,22 @@
 ---
 start_computer:
-  mainboard_id: 100
-  cpu_id: 200
-  processorCooler_id: 300
+  mainboard_id: 0101
+  cpu_id: 0201
+  processorCooler_id: 0301
+  ram_id: 0401
   gpu_id: null
-  ram_id: 500
-  disk_id: 600
+  disk_id: 0601
   networkcard_id: null
-  powerPack_id: 800
-  case_id: 900
+  powerPack_id: 0801
+  case_id: 0901
+
 start_router:
-  router_id: 100
+  router_id: 1001
+
 mainboard:
-  - id: 100
+  - id: 0101
     name: Zero MX One
-    case: Mini-ITX
+    case: Midi
     cpuSocket: XT2019
     cpuSlots: 1
     coreTemperatureControl: false
@@ -30,7 +32,7 @@ mainboard:
       name: nForce 1
       vRamSize: 128
       frequency: 322
-      capabilityGPU: 80
+      capabilityGPU: 9999
     expansionSlots:
       - interface: AGP 1.0
         interfaceSlots: 1
@@ -43,28 +45,100 @@ mainboard:
       connectorType: RJ46
       ports: 1
       speed: 100
-      capabilityNET: 50
+      capabilityNET: 9999
     powerUsage: 10
     price: 100
-  - id: 101
-    name: Zero Ultimate Pro
+
+  - id: 0102
+    name: Zero MX Pro
+    case: Midi
+    cpuSocket: XT2019
+    cpuSlots: 1
+    coreTemperatureControl: false
+    usbPorts: 0
+    ram:
+      ramSlots: 1
+      maxRamSize: 1024
+      ramTyp:
+        - DDR 1.0
+      frequency:
+        - 922
+        - 1122
+    graphicUnitOnBoard:
+      name: nForce 1
+      vRamSize: 128
+      frequency: 322
+      capabilityGPU: 9999
+    expansionSlots:
+      - interface: AGP 1.0
+        interfaceSlots: 1
+    diskStorage:
+      - interface: IDE 1.0
+        diskSlots: 2
+    networkPort:
+      networkUnitOnBoard: true
+      name: Network One
+      connectorType: RJ46
+      ports: 1
+      speed: 100
+      capabilityNET: 9999
+    powerUsage: 20
+    price: 100
+
+  - id: 0103
+    name: Zetta Ultimate M150
+    case: ITX
+    cpuSocket: XT2020
+    cpuSlots: 1
+    coreTemperatureControl: false
+    usbPorts: 0
+    ram:
+      ramSlots: 2
+      maxRamSize: 2048
+      ramTyp:
+        - DDR 1.0
+        - DDR 2.0
+      frequency:
+        - 922
+        - 1122
+        - 1422
+    graphicUnitOnBoard:
+      name: null
+      vRamSize: null
+      frequency: null
+      capabilityGPU: null
+    expansionSlots:
+      - interface: PCI 1.0
+        interfaceSlots: 1
+    diskStorage:
+      - interface: SATA 1.0
+        diskSlots: 2
+    networkPort:
+      networkUnitOnBoard: true
+      name: Network One
+      connectorType: RJ46
+      ports: 1
+      speed: 100
+      capabilityNET: 9999
+    powerUsage: 20
+    price: 100
+
+  - id: 0104
+    name: Zeus Professional X2
     case: ATX
     cpuSocket: XT2021
     cpuSlots: 1
     coreTemperatureControl: false
     usbPorts: 0
     ram:
-      ramSlots: 4
-      maxRamSize: 8192
+      ramSlots: 2
+      maxRamSize: 4096
       ramTyp:
         - DDR 2.0
         - DDR 3.0
-        - DDR 4.0
       frequency:
         - 1422
-        - 1822
-        - 2222
-        - 2500
+        - 1622
     graphicUnitOnBoard:
       name: null
       vRamSize: null
@@ -72,13 +146,53 @@ mainboard:
       capabilityGPU: null
     expansionSlots:
       - interface: PCI 2.0
-        interfaceSlots: 2
-      - interface: PCIe 3.0
-        interfaceSlots: 2
+        interfaceSlots: 1
     diskStorage:
       - interface: SATA 1.0
-        diskSlots: 1
+        diskSlots: 2
       - interface: SATA 2.0
+        diskSlots: 1
+    networkPort:
+      networkUnitOnBoard: true
+      name: Network One
+      connectorType: RJ46
+      ports: 1
+      speed: 100
+      capabilityNET: 9999
+    powerUsage: 20
+    price: 100
+
+  - id: 0105
+    name: Zeus Professional X3
+    case: ATX
+    cpuSocket: XT2021
+    cpuSlots: 1
+    coreTemperatureControl: false
+    usbPorts: 0
+    ram:
+      ramSlots: 2
+      maxRamSize: 8192
+      ramTyp:
+        - DDR 3.0
+        - DDR 4.0
+      frequency:
+        - 1622
+        - 1800
+        - 2400
+    graphicUnitOnBoard:
+      name: null
+      vRamSize: null
+      frequency: null
+      capabilityGPU: null
+    expansionSlots:
+      - interface: PCI 2.0
+        interfaceSlots: 1
+      - interface: PCIe 3.0
+        interfaceSlots: 1
+    diskStorage:
+      - interface: SATA 2.0
+        diskSlots: 1
+      - interface: SATA 3.0
         diskSlots: 2
     networkPort:
       networkUnitOnBoard: false
@@ -88,14 +202,15 @@ mainboard:
       speed: null
       capabilityNET: null
     powerUsage: 20
-    price: 555
+    price: 100
+
 cpu:
-  - id: 201
+  - id: 0201
     name: CoreOne A100
-    frequencyMin: 5000
-    frequencyMax: 5000
-    socket: XT2021
-    cores: 4
+    frequencyMin: 400
+    frequencyMax: 400
+    socket: XT2019
+    cores: 1
     turboSpeed: false
     overClock: false
     maxTemperature: 72
@@ -104,75 +219,210 @@ cpu:
       vRamSize: null
       frequency: null
       capabilityGPU: null
-    capabilityCPU: 450
-    powerUsage: 180
-    price: 500
+    capabilityCPU: 9999
+    powerUsage: 220
+    price: 100
+
+  - id: 0202
+    name: CoreOne A110
+    frequencyMin: 800
+    frequencyMax: 800
+    socket: XT2019
+    cores: 1
+    turboSpeed: false
+    overClock: false
+    maxTemperature: 72
+    graphicUnit:
+      name: null
+      vRamSize: null
+      frequency: null
+      capabilityGPU: null
+    capabilityCPU: 9999
+    powerUsage: 220
+    price: 100
+
+  - id: 0203
+    name: DualCore M101
+    frequencyMin: 800
+    frequencyMax: 800
+    socket: XT2020
+    cores: 2
+    turboSpeed: false
+    overClock: false
+    maxTemperature: 72
+    graphicUnit:
+      name: HD Graphic 100
+      vRamSize: 512
+      frequency: 522
+      capabilityGPU: 9999
+    capabilityCPU: 9999
+    powerUsage: 250
+    price: 100
+
+  - id: 0204
+    name: QuadCore TX900
+    frequencyMin: 2200
+    frequencyMax: 2200
+    socket: XT2021
+    cores: 4
+    turboSpeed: false
+    overClock: false
+    maxTemperature: 92
+    graphicUnit:
+      name: HD Graphic 110
+      vRamSize: 1024
+      frequency: 522
+      capabilityGPU: 9999
+    capabilityCPU: 9999
+    powerUsage: 210
+    price: 100
+
+  - id: 0205
+    name: QuadCore TX950
+    frequencyMin: 3000
+    frequencyMax: 3000
+    socket: XT2021
+    cores: 4
+    turboSpeed: false
+    overClock: false
+    maxTemperature: 92
+    graphicUnit:
+      name: HD Graphic 115
+      vRamSize: 1024
+      frequency: 922
+      capabilityGPU: 9999
+    capabilityCPU: 9999
+    powerUsage: 230
+    price: 100
+
 processorCooler:
-  - id: 300
+  - id: 0301
     name: CPU Cooler Mini
     coolerSpeed: 1
     socket: XT2019
     powerUsage: 10
-    price: 50
-  - id: 301
+    price: 100
+
+  - id: 0302
     name: CPU Cooler Plus
-    coolerSpeed: 1
-    socket: XT2019
+    coolerSpeed: 2
+    socket: XT2020
     powerUsage: 10
-    price: 50
-  - id: 302
+    price: 100
+
+  - id: 0303
     name: CPU Cooler Pro
-    coolerSpeed: 1
-    socket: XT2019
-    powerUsage: 10
-    price: 50
+    coolerSpeed: 4
+    socket: XT2021
+    powerUsage: 15
+    price: 100
+
 ram:
-  - id: 400
+  - id: 0401
     name: Crossfire One
     ramSize: 128
     ramTyp: DDR 1.0
     frequency: 422
-    capabilityRAM: 54
+    capabilityRAM: 9999
     powerUsage: 5
     price: 100
-  - id: 401
+
+  - id: 0402
     name: Crossfire ZX100
+    ramSize: 512
+    ramTyp: DDR 1.0
+    frequency: 922
+    capabilityRAM: 9999
+    powerUsage: 7
+    price: 100
+
+  - id: 0403
+    name: Crossfire ZX110
+    ramSize: 1024
+    ramTyp: DDR 1.0
+    frequency: 1122
+    capabilityRAM: 9999
+    powerUsage: 10
+    price: 100
+
+  - id: 0404
+    name: Crossfire ZX200
+    ramSize: 1024
+    ramTyp: DDR 2.0
+    frequency: 1222
+    capabilityRAM: 9999
+    powerUsage: 10
+    price: 100
+
+  - id: 0405
+    name: Crossfire ZX210
     ramSize: 1024
     ramTyp: DDR 2.0
     frequency: 1422
-    capabilityRAM: 122
-    powerUsage: 7
-    price: 198
+    capabilityRAM: 9999
+    powerUsage: 10
+    price: 100
+
+  - id: 0406
+    name: Crossfire ZX220
+    ramSize: 2048
+    ramTyp: DDR 3.0
+    frequency: 1622
+    capabilityRAM: 9999
+    powerUsage: 10
+    price: 100
+
+  - id: 0407
+    name: Crossfire P50
+    ramSize: 4096
+    ramTyp: DDR 4.0
+    frequency: 1800
+    capabilityRAM: 9999
+    powerUsage: 10
+    price: 100
+
+  - id: 0408
+    name: Crossfire P60
+    ramSize: 4096
+    ramTyp: DDR 4.0
+    frequency: 2400
+    capabilityRAM: 9999
+    powerUsage: 10
+    price: 100
+
 gpu:
-  - id: 500
+  - id: 0501
     name: Forcevid MX1000
     vRamSize: 512
     vRamTyp: GDDR 1.0
     frequency: 422
     interface: AGP 1.0
-    capabilityGPU: 550
+    capabilityGPU: 9999
     powerUsage: 80
-    price: 80
-  - id: 501
+    price: 100
+
+  - id: 0502
     name: Zetta TX2066
     vRamSize: 1024
     vRamTyp: GDDR 1.0
-    frequency: 1422
-    interface: AGP 1.0
-    capabilityGPU: 550
-    powerUsage: 80
-    price: 80
-  - id: 502
+    frequency: 1200
+    interface: PCI 1.0
+    capabilityGPU: 9999
+    powerUsage: 220
+    price: 100
+
+  - id: 0503
     name: Zetta TX2066 Pro
-    vRamSize: 512
-    vRamTyp: GDDR 3.0
-    frequency: 2422
+    vRamSize: 2048
+    vRamTyp: GDDR 2.0
+    frequency: 1444
     interface: PCI 2.0
-    capabilityGPU: 550
-    powerUsage: 80
-    price: 80
+    capabilityGPU: 9999
+    powerUsage: 280
+    price: 100
+
 disk:
-  - id: 600
+  - id: 0601
     name: HDD Elements Zero A
     diskTyp: HDD
     capacity: 2000
@@ -180,8 +430,19 @@ disk:
     readingSpeed: 16
     interface: IDE 1.0
     powerUsage: 15
-    price: 60
-  - id: 602
+    price: 100
+
+  - id: 0602
+    name: HDD Elements Zero B
+    diskTyp: HDD
+    capacity: 5000
+    writingSpeed: 15
+    readingSpeed: 25
+    interface: IDE 1.0
+    powerUsage: 15
+    price: 100
+
+  - id: 0603
     name: HDD Elements Two
     diskTyp: HDD
     capacity: 10000
@@ -189,55 +450,67 @@ disk:
     readingSpeed: 80
     interface: SATA 1.0
     powerUsage: 15
-    price: 60
-  - id: 602
-    name: SSD Two
-    diskTyp: HDD
-    capacity: 10000
-    writingSpeed: 60
-    readingSpeed: 80
-    interface: SATA 2.0
-    powerUsage: 15
-    price: 60
-  - id: 602
+    price: 100
+
+  - id: 0604
+    name: SSD 20GB MX
+    diskTyp: SSD
+    capacity: 20000
+    writingSpeed: 150
+    readingSpeed: 200
+    interface: SATA 3.0
+    powerUsage: 10
+    price: 100
+
+  - id: 0605
     name: SSD 100GB M.2
-    diskTyp: HDD
+    diskTyp: SSD
     capacity: 100000
-    writingSpeed: 600
-    readingSpeed: 800
-    interface: PCIe 2.0
-    powerUsage: 15
-    price: 895
+    writingSpeed: 1500
+    readingSpeed: 1800
+    interface: PCIe 3.0
+    powerUsage: 10
+    price: 100
+
 networkcard:
-  - id: 700
+  - id: 0701
     name: Network Element One
     interface: PCIe 1.0
     connectorType: RJ46
     speed: 200
-    capabilityNET: 800
+    capabilityNET: 9999
     powerUsage: 25
     price: 100
+
 powerPack:
-  - id: 800
-    name: Crossfire XSOne 500 Watt
-    totalPower: 500
-    price: 110
-  - id: 801
-    name: Zeus X10 Pro
-    totalPower: 700
-    price: 190
+  - id: 0801
+    name: Crossfire XSOne 600 Watt
+    totalPower: 600
+    price: 100
+
+  - id: 0802
+    name: Zeus X-Pro 800 Watt
+    totalPower: 800
+    price: 100
+
 case:
-  - id: 900
+  - id: 0901
     case: Midi
+    size: Small
     price: 100
-  - id: 901
+
+  - id: 0902
     case: ITX
+    size: Middle
     price: 100
-  - id: 902
+
+  - id: 0903
     case: ATX
+    size: Big
     price: 100
+
 player_router:
-  - id: 700
+  - id: 1001
     name: Router One
     network:
       connectorType: RJ46
@@ -246,19 +519,23 @@ player_router:
     speed: 200
     powerUsage: 7
     price: -1
+
 server_router:
   - id: 55000
     name: Morph-Addr-Refresher-Router
     ports: 250
     address: 00.11.11.11
+
   - id: 56000
     name: Hardwareshop-Router
     ports: 300
     address: 00.12.12.12
+
   - id: 57000
     name: Money-Pool-Router
     ports: 300
     address: 00.13.13.13
+
   - id: 58000
     name: Dispatch-Service-Router
     ports: 150
