@@ -32,7 +32,7 @@ mainboard:
       name: nForce 1
       vRamSize: 128
       frequency: 322
-      capabilityGPU: 9999
+      capabilityGPU: 5000 # Mindestwert liegt bei 10.000 LP, das ist eine Ausnahme.
     expansionSlots:
       - interface: AGP 1.0
         interfaceSlots: 1
@@ -45,7 +45,7 @@ mainboard:
       connectorType: RJ46
       ports: 1
       speed: 100
-      capabilityNET: 9999
+      capabilityNET: 10000
     powerUsage: 10
     price: 100
 
@@ -68,7 +68,7 @@ mainboard:
       name: nForce 1
       vRamSize: 128
       frequency: 322
-      capabilityGPU: 9999
+      capabilityGPU: 10000
     expansionSlots:
       - interface: AGP 1.0
         interfaceSlots: 1
@@ -81,7 +81,7 @@ mainboard:
       connectorType: RJ46
       ports: 1
       speed: 100
-      capabilityNET: 9999
+      capabilityNET: 10000
     powerUsage: 20
     price: 100
 
@@ -101,7 +101,7 @@ mainboard:
       frequency:
         - 922
         - 1122
-        - 1422
+        - 1222
     graphicUnitOnBoard:
       name: null
       vRamSize: null
@@ -119,7 +119,7 @@ mainboard:
       connectorType: RJ46
       ports: 1
       speed: 100
-      capabilityNET: 9999
+      capabilityNET: 10000
     powerUsage: 20
     price: 100
 
@@ -153,12 +153,12 @@ mainboard:
       - interface: SATA 2.0
         diskSlots: 1
     networkPort:
-      networkUnitOnBoard: true
-      name: Network One
-      connectorType: RJ46
-      ports: 1
-      speed: 100
-      capabilityNET: 9999
+      networkUnitOnBoard: false
+      name: null
+      connectorType: null
+      ports: null
+      speed: null
+      capabilityNET: null
     powerUsage: 20
     price: 100
 
@@ -219,7 +219,7 @@ cpu:
       vRamSize: null
       frequency: null
       capabilityGPU: null
-    capabilityCPU: 9999
+    capabilityCPU: 10000
     powerUsage: 220
     price: 100
 
@@ -237,7 +237,7 @@ cpu:
       vRamSize: null
       frequency: null
       capabilityGPU: null
-    capabilityCPU: 9999
+    capabilityCPU: 20000
     powerUsage: 220
     price: 100
 
@@ -254,8 +254,8 @@ cpu:
       name: HD Graphic 100
       vRamSize: 512
       frequency: 522
-      capabilityGPU: 9999
-    capabilityCPU: 9999
+      capabilityGPU: 10000
+    capabilityCPU: 40000
     powerUsage: 250
     price: 100
 
@@ -272,8 +272,8 @@ cpu:
       name: HD Graphic 110
       vRamSize: 1024
       frequency: 522
-      capabilityGPU: 9999
-    capabilityCPU: 9999
+      capabilityGPU: 15000
+    capabilityCPU: 150000
     powerUsage: 210
     price: 100
 
@@ -290,8 +290,8 @@ cpu:
       name: HD Graphic 115
       vRamSize: 1024
       frequency: 922
-      capabilityGPU: 9999
-    capabilityCPU: 9999
+      capabilityGPU: 26000
+    capabilityCPU: 205000
     powerUsage: 230
     price: 100
 
@@ -323,7 +323,7 @@ ram:
     ramSize: 128
     ramTyp: DDR 1.0
     frequency: 422
-    capabilityRAM: 9999
+    capabilityRAM: 10000
     powerUsage: 5
     price: 100
 
@@ -332,7 +332,7 @@ ram:
     ramSize: 512
     ramTyp: DDR 1.0
     frequency: 922
-    capabilityRAM: 9999
+    capabilityRAM: 44000
     powerUsage: 7
     price: 100
 
@@ -341,7 +341,7 @@ ram:
     ramSize: 1024
     ramTyp: DDR 1.0
     frequency: 1122
-    capabilityRAM: 9999
+    capabilityRAM: 106000
     powerUsage: 10
     price: 100
 
@@ -350,7 +350,7 @@ ram:
     ramSize: 1024
     ramTyp: DDR 2.0
     frequency: 1222
-    capabilityRAM: 9999
+    capabilityRAM: 139000
     powerUsage: 10
     price: 100
 
@@ -359,7 +359,7 @@ ram:
     ramSize: 1024
     ramTyp: DDR 2.0
     frequency: 1422
-    capabilityRAM: 9999
+    capabilityRAM: 162000
     powerUsage: 10
     price: 100
 
@@ -368,7 +368,7 @@ ram:
     ramSize: 2048
     ramTyp: DDR 3.0
     frequency: 1622
-    capabilityRAM: 9999
+    capabilityRAM: 430000
     powerUsage: 10
     price: 100
 
@@ -377,7 +377,7 @@ ram:
     ramSize: 4096
     ramTyp: DDR 4.0
     frequency: 1800
-    capabilityRAM: 9999
+    capabilityRAM: 920000
     powerUsage: 10
     price: 100
 
@@ -386,7 +386,7 @@ ram:
     ramSize: 4096
     ramTyp: DDR 4.0
     frequency: 2400
-    capabilityRAM: 9999
+    capabilityRAM: 1100000
     powerUsage: 10
     price: 100
 
@@ -397,7 +397,7 @@ gpu:
     vRamTyp: GDDR 1.0
     frequency: 422
     interface: AGP 1.0
-    capabilityGPU: 9999
+    capabilityGPU: 40000
     powerUsage: 80
     price: 100
 
@@ -407,7 +407,7 @@ gpu:
     vRamTyp: GDDR 1.0
     frequency: 1200
     interface: PCI 1.0
-    capabilityGPU: 9999
+    capabilityGPU: 204000
     powerUsage: 220
     price: 100
 
@@ -417,7 +417,7 @@ gpu:
     vRamTyp: GDDR 2.0
     frequency: 1444
     interface: PCI 2.0
-    capabilityGPU: 9999
+    capabilityGPU: 460000
     powerUsage: 280
     price: 100
 
@@ -425,7 +425,7 @@ disk:
   - id: 0601
     name: HDD Elements Zero A
     diskTyp: HDD
-    capacity: 2000
+    size: 2000
     writingSpeed: 8
     readingSpeed: 16
     interface: IDE 1.0
@@ -435,7 +435,7 @@ disk:
   - id: 0602
     name: HDD Elements Zero B
     diskTyp: HDD
-    capacity: 5000
+    size: 5000
     writingSpeed: 15
     readingSpeed: 25
     interface: IDE 1.0
@@ -445,7 +445,7 @@ disk:
   - id: 0603
     name: HDD Elements Two
     diskTyp: HDD
-    capacity: 10000
+    size: 10000
     writingSpeed: 60
     readingSpeed: 80
     interface: SATA 1.0
@@ -455,7 +455,7 @@ disk:
   - id: 0604
     name: SSD 20GB MX
     diskTyp: SSD
-    capacity: 20000
+    size: 20000
     writingSpeed: 150
     readingSpeed: 200
     interface: SATA 3.0
@@ -465,7 +465,7 @@ disk:
   - id: 0605
     name: SSD 100GB M.2
     diskTyp: SSD
-    capacity: 100000
+    size: 100000
     writingSpeed: 1500
     readingSpeed: 1800
     interface: PCIe 3.0
@@ -478,7 +478,7 @@ networkcard:
     interface: PCIe 1.0
     connectorType: RJ46
     speed: 200
-    capabilityNET: 9999
+    capabilityNET: 20000
     powerUsage: 25
     price: 100
 
