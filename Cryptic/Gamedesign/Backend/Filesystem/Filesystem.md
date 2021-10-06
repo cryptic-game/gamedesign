@@ -23,15 +23,17 @@ Anm. Devs: (PC mit mehreren Festplatten)
 * Ordner können weitere Ordner und Dateien enthalten.
 * Ordner sind vom Spieler zu benennen: - auch beim Umbenennen beachten
     * kein Name von der [Blacklist](Filesystem.md#144-blacklist)
-    * 1 bis 32 Zeichen im Namen
-    * Namen dürfen nur Buchstaben, Ziffern und `.-_` enthalten. (ASCII 45-46, 65-90, 95, 97-122)
+    * RegEx: [a-zA-z0-9.\-_]{1,32}
+      * 1 bis 32 Zeichen im Namen
+      * Namen dürfen nur Buchstaben, Ziffern und \`.-_\` enthalten. (ASCII Großbuchstaben, Kleinbuchstaben, Punkt, Unterstrich, Minus, Ziffern (0-9) - die Namen “..” und “.” sind Verboten
+
 * Ordner können verschoben werden (mit Inhalt).
 * Ordner können gelöscht werden. Im Ordner enthaltene Dateien und Ordner werden dann rekursiv gelöscht.
 * Ordner können kopiert werden (mit Inhalt, nur vollständig)
 * Ordner können umbenannt werden.
 * Ordner können sichtbar oder unsichtbar sein.
 * Es kann abgerufen werden, welche Ordner und Dateien in einem Ordner enthalten sind (nicht rekursiv).
-    * Art (Ordner/Datei), Stufe und Name
+    * Art (Ordner/Datei), Rechte und Name
 
 <br>
 
@@ -39,11 +41,7 @@ Anm. Devs: (PC mit mehreren Festplatten)
 
 * Dateien enthalten Texte.
 * Inhalte werden auf Blacklist-Begriffe geprüft.
-* Es sind alle gängigen Buchstaben, Zahlen und Sonderzeichen zulässig (Inhalt der Datei). UTF-8
-* Dateiname ist vom Spieler anzugeben:
-    * kein Name von der [Blacklist](Filesystem.md#144-blacklist)
-    * 1 bis 32 Zeichen im Namen
-    * Namen dürfen nur Buchstaben, Ziffern und `.-_` enthalten. (ASCII 45-46, 65-90, 95, 97-122)
+* Inhalt muss UTF-8 konform sein.
 * Dateien sind vom Spieler zu benennen:
     * Siehe [1.4.1 Ordnerstruktur](Filesystem.md#141-ordnerstruktur)
 * Dateien können sichtbar oder unsichtbar sein, siehe <span style="text-decoration:underline;">1.6.1.1.5.2 Stufensystem</span>
@@ -54,10 +52,6 @@ Anm. Devs: (PC mit mehreren Festplatten)
 * Der Inhalt einer Datei kann vom Spieler abgerufen werden.
 * Der Inhalt einer Datei kann vom Spieler geändert werden. Abhängig vom Rechtesystem - siehe <span style="text-decoration:underline;">1.6.1.1.5 Benutzerverwaltung</span>
 * Die Dateigröße kann vom Spieler abgerufen werden, abhängig von Rechten.
-* Während der Bearbeitung kann mit der Datei weiter agiert werden.
-    * während der Bearbeitung wird bearbeitet: jede Bearbeitung wird gespeichert, die letzte ist dann die letzte
-    * während der Bearbeitung wird gelöscht: Die Bearbeitung ist eine neue Datei mit gleichem Namen an alter Stelle (wenn genug Speicherplatz)
-    * während der Bearbeitung wird verschoben: An der alten Stelle wird die Bearbeitung als neue Datei gespeichert. (wenn genug Speicherplatz)
 * Der Inhalt einer Datei darf max. 1’800 Zeichen betragen ``(ThisIsForGameParameters /filesystem/file/maxcharsperfile)``
 
 <br>
@@ -70,9 +64,8 @@ Anm. Devs: (PC mit mehreren Festplatten)
     * 1.000 TB = 1 PB
 * Es können nur Ordner und Dateien angelegt werden, wenn Platz auf der verbauten Hardware (ingame Festplatte) ist.\
 Anm. Dev: (Speicherbedarf bevor der Aktion ausrechnen) (Jede Festplatte einzeln betrachtet)
-* Ordner verbrauchen jeweils 1 MB (Ingame) ``(ThisIsForGameParameters /filesystem/folder/needsspace)``
-* Dateien verbrauchen je begonnene 20 Zeichen 5 MB (Ingame) ``(ThisIsForGameParameters /filesystem/file/needspaceper20chars)``
-
+* Ordner verbrauchen jeweils 1 MB (Ingame) 
+* Dateien verbrauchen je begonnene 20 Zeichen 5 MB (Ingame) \
 **Vorgehensweise:**
 
 Anzahl Zeichen | Speicher in MB

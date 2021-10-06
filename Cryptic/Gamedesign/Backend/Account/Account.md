@@ -1,6 +1,6 @@
 ## **1.1 Account/User**
 
-erstellt von [Allen]
+
 
 >Abgeschlossen: Security, Tristan, Jannik \
 Datum: 29.06.2021
@@ -15,19 +15,20 @@ Wir managen die User-Accounts nicht selbst, sondern verwenden [OAuth2](https://o
 
 ### **1.1.2 Erster Login**
 
-Bei dem ersten Login muss der Nutzer einen Benutzername festlegen. Dieser muss folgende Kriterien erfüllen:
+Bei dem ersten Login muss der Nutzer einen Benutzernamen festlegen. Dieser muss folgende Kriterien erfüllen:
 
-*   Länge zwischen 4 und 32 Zeichen
-*   Darf nur Buchstaben (a-z, A-Z) und Zahlen (0-9) enthalten
-*   Derselbe Benutzername darf nicht mehrfach vergeben werden
+*   RegEx: [a-zA-Z0-9]{4,32}
+    *  Länge zwischen 4 und 32 Zeichen
+    *  Darf nur Buchstaben (a-z, A-Z) und Zahlen (0-9) enthalten
+*    Derselbe Benutzername darf nicht mehrfach vergeben werden
 *   Kein Name von der Blacklist
+
 
 <br>
 
 ### **1.1.3 Benutzerverwaltung**
 
-*   Der Benutzer kann seinen Nutzernamen monatlich 1x ändern
-    *   Anforderungen s. [Erster Login](Account.md#112-erster-login)
+*   [zukünftig: Der Benutzer kann seinen Nutzernamen monatlich 1x ändern]
 
 <br>
 
