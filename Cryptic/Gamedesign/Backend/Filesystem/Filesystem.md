@@ -40,7 +40,7 @@ Anm. Devs: (PC mit mehreren Festplatten)
 ### **1.4.2 Text-Dateien**
 
 * Dateien enthalten Texte.
-* Inhalte werden auf Blacklist-Begriffe geprüft.
+* Inhalte werden auf [Blacklist](Filesystem.md#144-blacklist)-Begriffe geprüft.
 * Inhalt muss UTF-8 konform sein.
 * Dateien sind vom Spieler zu benennen:
     * Siehe [1.4.1 Ordnerstruktur](Filesystem.md#141-ordnerstruktur)
@@ -52,8 +52,7 @@ Anm. Devs: (PC mit mehreren Festplatten)
 * Der Inhalt einer Datei kann vom Spieler abgerufen werden.
 * Der Inhalt einer Datei kann vom Spieler geändert werden. Abhängig vom Rechtesystem - siehe <span style="text-decoration:underline;">1.6.1.1.5 Benutzerverwaltung</span>
 * Die Dateigröße kann vom Spieler abgerufen werden, abhängig von Rechten.
-* Der Inhalt einer Datei darf max. 1’800 Zeichen betragen ``(ThisIsForGameParameters /filesystem/file/maxcharsperfile)``
-
+* Der Inhalt einer Datei darf max. 1’800 Zeichen betragen 
 <br>
 
 ### **1.4.3 Speichernutzung**

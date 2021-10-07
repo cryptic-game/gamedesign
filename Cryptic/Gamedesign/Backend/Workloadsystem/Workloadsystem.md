@@ -76,33 +76,34 @@ Grundlegende Funktionen
 
 1. Die Definition, welche Auswirkung wann eintritt, wird individuell für jeden Prozess festgelegt.
 2. Auswirkungen hängen von der Stärke der Reduzierung ab.
-    - Prozesse geben eine Leistungsgrenze für jede Auswirkung an.
-        - Die Grenze ist in einem Quotienten aus erhaltener und geforderter Leistung beschrieben.
-        - Die verfügbaren Auswirkungen sind fix.
-    - Beispiel:
-        - crashBelowPercentage: 0.5
-        - ⇒ Wenn der Prozess weniger als 50% der geforderten Leistung zugewiesen bekommt, crashed er.
+    * Prozesse geben eine Leistungsgrenze für jede Auswirkung an.
+        * Die Grenze ist in einem Quotienten aus erhaltener und geforderter Leistung beschrieben.
+        * Die verfügbaren Auswirkungen sind fix.
+    * Beispiel:
+        * crashBelowPercentage: 0.5
+        * ⇒ Wenn der Prozess weniger als 50% der geforderten Leistung zugewiesen bekommt, crashed er.
 3. Ein Prio 1 Prozess stürzt sofort unter 100% ab. Er muss zwingend die volle Leistung bekommen.
 4. Ein Prio 4 Prozess stürzt sofort unter 100% ab. Er muss zwingend die volle Leistung bekommen.
 
 5. Folgende Auswirkungen sind möglich:
-    - Prozess stürzt ab
-        - Ohne Abschaltzeit oder Abschaltleistung sofort deaktiviert.
-    - Prozess startet beim nächsten Mal langsamer (nach Absturz)
-        - Nächste Startzeit nach Crash ist länger.
-    - Prozess antwortet nicht
-        - Beansprucht immer noch die zugewiesene Leistung, führt allerdings keine Aktionen mehr aus, bis er die
+    * Prozess stürzt ab
+        * Ohne Abschaltzeit oder Abschaltleistung sofort deaktiviert.
+    * Prozess startet beim nächsten Mal langsamer (nach Absturz)
+        * Nächste Startzeit nach Crash ist länger.
+    * Prozess antwortet nicht
+        * Beansprucht immer noch die zugewiesene Leistung, führt allerdings keine Aktionen mehr aus, bis er die
           Leistungsgrenze wieder nach oben überschreitet. (E.g: Es werden keine Morphcoins berechnet / Es werden keine
           Befehle dieses Prozesses ausgeführt)
-    - Prozess kann nicht “rechnen”
-        - Gleiches wie Prozess antwortet nicht, nur wird eine Fehlermeldung angezeigt.
-    - Prozess arbeitet ineffektiver
-        - z.B. es werden weniger MCs generiert/ die Erfolgschance sinkt
-        - Der Ineffektivitätsfaktor wird von dem Intervall [cannotCalculateGrenze ; 1] auf [0 ; 1] gemapped/interpoliert
-
+    * Prozess kann nicht “rechnen”
+        * Gleiches wie Prozess antwortet nicht, nur wird eine Fehlermeldung angezeigt.
+    * Prozess arbeitet ineffektiver
+        * z.B. es werden weniger MCs generiert/ die Erfolgschance sinkt
+        * Der Ineffektivitätsfaktor wird von dem Intervall [cannotCalculateGrenze ; 1] auf [0 ; 1] gemapped/interpoliert
+          \
           (Beispiel:
-          Grenze e) < 100%; Grenze d) < 80% zugewiesene Leistung = 90% -> mittig zwischen beiden Grenzen -> nur noch zu
-          50% effizient.)
+            * Grenze e) < 100%;
+            * Grenze d) < 80%;
+            * zugewiesene Leistung = 90% -> mittig zwischen beiden Grenzen -> nur noch zu 50% effizient.)
 
 ### **1.5.6.2 Bei startenden/stoppenden Prozessen**
 
