@@ -32,17 +32,38 @@ globalSettings:
 
 network-server:
   gan-server:
-    - name: Europa
-      darknet: false
-      - wan-server:
-        name: Deutschland
-        man-server:
+    - name: Europa          #Welcher Gan Server
+      darknet: false        #Ist es ein Darknet Server
+    - Gan connect:          #zu welchen anderen Gan Servern ist er Verbunden
+        - Asien       
+        - Nordamerika
+      - wan-server:         #wan Server innerhalb des darüberstehenden Gan Server
+        name: Deutschland   
+        man-server:         #man Server innerhalb des darüberstehenden Wan Server
           name:
             - Berlin
             - München
             - Hamburg
+
+        name: Finnland
+        man-server:
+          name:
+            - Helsinki
+            - Espoo
+            - Tamepere
+
+        name: Spanien
+        man-server:
+          name:
+            - Madrid
+            - Barcelona
+            - Valencia
+
     - name: Asien
       darknet: false
+    - Gan connect:          
+        - Europa       
+        - Australien
       - wan-server:
         name: China
         man-server:
@@ -50,4 +71,143 @@ network-server:
             - Peking
             - Shenzhen
             - Shanghai
+
+        name: Russland
+        man-server:
+          name:
+            - Moskau
+            - Nowosibirsk
+            - Sankt Petersburg
+
+        name: Indien
+        man-server:
+          name:
+            - Delhi
+            - Mumbai
+            - Kalkutta
+
+    - name: Australien
+      darknet: false
+    - Gan connect:         
+        - Asien       
+        - Afrika
+      - wan-server:
+        name: Queensland
+        man-server:
+          name:
+            - Brisbane
+
+        name: New South Wales
+        man-server:
+          name:
+            - Sydney
+          
+        name: Western Aust
+        man-server:
+          name:
+            - Perth
+
+    - name: Afrika
+      darknet: false
+    - Gan connect:          
+        - Australien       
+        - Südamerika
+      - wan-server:
+        name: Ägypten
+        man-server:
+          name:
+            - Kairo
+            - Gizeh
+            - Alexandria
+
+        name: Algerien
+        man-server:
+          name:
+            - Agier
+            - Oran
+            - Constantine
+
+        name: Südafrika
+        man-server:
+          name:
+            - Kapstadt
+            - Durban
+            - Johannesburg
+            
+    - name: Südamerika
+      darknet: false
+    - Gan connect:         
+        - Afrika       
+        - Nordamerika
+      - wan-server:
+        name: Brasilien
+        man-server:
+          name:
+            - Rio de Janeiro
+            - Sao Paulo
+            - Manaus
+
+        name: Peru
+        man-server:
+          name:
+            - Cusco
+            - Lima
+            - Arequipa
+
+        name: Argentinien
+        man-server:
+          name:
+            - Buenos Aires
+            - Mendoza
+            - Salta
+
+    - name: Nordamerika
+      darknet: false
+    - Gan connect:          
+        - Europa       
+        - Süddamerika
+      - wan-server:
+        name: Kanada
+        man-server:
+          name:
+            - Montreal
+            - Toronto
+            - Vancouver
+
+        name: USA
+        man-server:
+          name:
+            - New York
+            - Los Angeles
+            - Chicago
+
+        name: Mexico
+        man-server:
+          name:
+            - Mexico
+            - Puebla
+            - Tijuana
+
+    - name: Proxima Centauri
+      darknet: true
+    - Gan connect:          #Verbindungen bestimmen !!!
+        - #platzhalter       
+        - #platzhalter
+      - wan-server:
+        name: -Sun
+        man-server:
+          name:
+            - Mercury
+            - Venus
+            - Earth
+            - Mars
+    
+    - name: -Sun
+        man-server:
+          name:
+            - Jupiter
+            - Saturn
+            - Uranus
+            - Neptune
+            - Pluto
       
