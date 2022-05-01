@@ -1,0 +1,53 @@
+---
+globalSettings:
+  network-server:
+    timeout: 60 #seconds
+    lock: 20 #minutes
+    gan-server:
+      ipAdress:
+        min:
+        max:
+      connectionType:
+        - gan-server
+        - wan-server
+    wan-server:
+      ipAdress:
+        min:
+        max:
+      connectionType:
+        - gan-server
+        - man-server
+    man-server:
+      ipAdress:
+        min:
+        max:
+      connectionType:
+        - wan-server
+        - player-router
+  service-server:
+    example:
+  player-router:
+    connectionType:
+      - man-server
+
+network-server:
+  gan-server:
+    - name: Europa
+      darknet: false
+      - wan-server:
+        name: Deutschland
+        man-server:
+          name:
+            - Berlin
+            - München
+            - Hamburg
+    - name: Asien
+      darknet: false
+      - wan-server:
+        name: China
+        man-server:
+          name:
+            - Peking
+            - Shenzhen
+            - Shanghai
+      
