@@ -32,26 +32,26 @@ globalSettings:
 
 network-server:
   gan-server:
-    - name: Europa          #Welcher Gan Server
-      darknet: false        #Ist es ein Darknet Server
-    - Gan connect:          #zu welchen anderen Gan Servern ist er Verbunden
+    - name: Europa          #Bezeichnung des GAN-Servers
+      darknet: false        #Ist GAN ein Darknet Server
+      ganConnect:           #Verbindung zu anderen GAN-Servern
         - Asien       
         - Nordamerika
-      - wan-server:         #wan Server innerhalb des darüberstehenden Gan Server
+      - wan-server:         #WAN-Server innerhalb des darüberstehenden GAN-Server
         name: Deutschland   
-        man-server:         #man Server innerhalb des darüberstehenden Wan Server
+        man-server:         #MAN-Server innerhalb des darüberstehenden WAN-Server
           name:
             - Berlin
             - München
             - Hamburg
-
+      - wan-server:
         name: Finnland
         man-server:
           name:
             - Helsinki
             - Espoo
             - Tamepere
-
+      - wan-server:
         name: Spanien
         man-server:
           name:
@@ -61,7 +61,7 @@ network-server:
 
     - name: Asien
       darknet: false
-    - Gan connect:          
+      ganConnect:          
         - Europa       
         - Australien
       - wan-server:
@@ -71,14 +71,14 @@ network-server:
             - Peking
             - Shenzhen
             - Shanghai
-
+      - wan-server:
         name: Russland
         man-server:
           name:
             - Moskau
             - Nowosibirsk
             - Sankt Petersburg
-
+      - wan-server:
         name: Indien
         man-server:
           name:
@@ -88,7 +88,7 @@ network-server:
 
     - name: Australien
       darknet: false
-    - Gan connect:         
+      ganConnect:         
         - Asien       
         - Afrika
       - wan-server:
@@ -96,12 +96,12 @@ network-server:
         man-server:
           name:
             - Brisbane
-
+      - wan-server:
         name: New South Wales
         man-server:
           name:
             - Sydney
-          
+      - wan-server:
         name: Western Aust
         man-server:
           name:
@@ -109,7 +109,7 @@ network-server:
 
     - name: Afrika
       darknet: false
-    - Gan connect:          
+      ganConnect:          
         - Australien       
         - Südamerika
       - wan-server:
@@ -119,24 +119,24 @@ network-server:
             - Kairo
             - Gizeh
             - Alexandria
-
+      - wan-server:
         name: Algerien
         man-server:
           name:
             - Agier
             - Oran
             - Constantine
-
+      - wan-server:
         name: Südafrika
         man-server:
           name:
             - Kapstadt
             - Durban
             - Johannesburg
-            
+
     - name: Südamerika
       darknet: false
-    - Gan connect:         
+      ganConnect:         
         - Afrika       
         - Nordamerika
       - wan-server:
@@ -146,14 +146,14 @@ network-server:
             - Rio de Janeiro
             - Sao Paulo
             - Manaus
-
+      - wan-server:
         name: Peru
         man-server:
           name:
             - Cusco
             - Lima
             - Arequipa
-
+      - wan-server:
         name: Argentinien
         man-server:
           name:
@@ -163,7 +163,7 @@ network-server:
 
     - name: Nordamerika
       darknet: false
-    - Gan connect:          
+      ganConnect:          
         - Europa       
         - Süddamerika
       - wan-server:
@@ -173,36 +173,37 @@ network-server:
             - Montreal
             - Toronto
             - Vancouver
-
+      - wan-server:
         name: USA
         man-server:
           name:
             - New York
             - Los Angeles
             - Chicago
-
+      - wan-server:
         name: Mexico
         man-server:
           name:
             - Mexico
             - Puebla
             - Tijuana
-
+    
+      #Darknet-Server
     - name: Proxima Centauri
       darknet: true
-    - Gan connect:          #Verbindungen bestimmen !!!
+      ganConnect:          #Verbindungen bestimmen !!!
         - #platzhalter       
         - #platzhalter
       - wan-server:
-        name: -Sun
+        name: Sun
         man-server:
           name:
             - Mercury
             - Venus
             - Earth
             - Mars
-    
-    - name: -Sun
+      - wan-server:
+        name: Sun
         man-server:
           name:
             - Jupiter
